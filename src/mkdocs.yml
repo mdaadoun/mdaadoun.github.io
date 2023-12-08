@@ -1,14 +1,28 @@
 site_name: RNCP
 nav:
-  - Plan: index.md
-  - RNCP: rncp.md
-  - Projets:
-    - libft: libft.md
-    - ft_ls: ft_ls.md
-    - libasm: libasm.md
-    - taskmaster: taskmaster.md
+  - RNCP:
+    - Plan: index.md
+    - RNCP: rncp.md
+    - Projets unix:
+      - libft: libft.md
+      - ft_ls: ft_ls.md
+      - libasm: libasm.md
+      - taskmaster: taskmaster.md
+    - Projets sécurité:
+      - modules: secu.md
+    - Projets réseaux:
+      - ft_ping: ft_ping.md
   - KFS:
     - intro: kfs_intro.md
+    - kf1: kfs1.md
+    - kf2: kfs2.md
+  - NSI:
+    - college (cycle 4): college.md
+    - snt: snd.md
+    - bac - programme: bac_p.md
+    - bac - exams: bac_e.md
+    - capes - programme: capes_p.md
+    - capes - exams: capes_e.md
 
 theme: 
   icon:
