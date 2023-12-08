@@ -158,7 +158,15 @@ ALL: 25 projects, 4 target projects, 382.200 XP available
     * [discussions about the previous link](https://news.ycombinator.com/item?id=14104495)
 
 * [osdev](https://wiki.osdev.org/Expanded_Main_Page)
+    * [osdev books](https://wiki.osdev.org/Books)
 
-### Books
+* [computer science roadmap.sh](https://roadmap.sh/computer-science)
+* [computer science university](https://github.com/ossu/computer-science)
 
-* [osdev](https://wiki.osdev.org/Books)
+* [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+
+* [Python](https://github.com/trekhleb/learn-python)
+* [C](https://github.com/oz123/awesome-c#learning-reference-and-tutorials)
+
+* [emacs](https://github.com/sefakilic/awesome-emacs)
+* [emacs](https://github.com/emacs-tw/awesome-emacs)
