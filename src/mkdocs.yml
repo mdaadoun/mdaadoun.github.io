@@ -1,0 +1,42 @@
+site_name: RNCP
+nav:
+  - Plan: index.md
+  - RNCP: rncp.md
+  - Projets:
+    - libft: libft.md
+    - ft_ls: ft_ls.md
+    - libasm: libasm.md
+    - taskmaster: taskmaster.md
+  - KFS:
+    - intro: kfs_intro.md
+
+theme: 
+  icon:
+    logo: material/robot-love-outline
+    favicon: images/favicon.png
+  name: material 
+  language: fr
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: purple
+      toggle:
+        icon: material/brightness-4
+        name: Passer au mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: purple
+      toggle:
+        icon: material/brightness-7
+        name: Passer au mode clair
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.sections
+    # - navigation.tabs
+  #   - navigation.tabs.sticky
+
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.superfences
