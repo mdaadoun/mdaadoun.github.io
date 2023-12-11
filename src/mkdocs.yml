@@ -18,7 +18,9 @@ nav:
     - kf2: kfs2.md
   - NSI:
     - college (cycle 4): college.md
-    - snt: snd.md
+    - snt: snt.md
+    - nsi 1ere - cours: nsi_1.md
+    - nsi Term - cours: nsi_t.md
     - bac - programme: bac_p.md
     - bac - exams: bac_e.md
     - capes - programme: capes_p.md
