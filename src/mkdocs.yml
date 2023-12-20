@@ -1,30 +1,44 @@
 site_name: RNCP
 nav:
   - RNCP:
-    - Plan: index.md
-    - RNCP: rncp.md
-    - Projets unix:
-      - libft: libft.md
-      - ft_ls: ft_ls.md
-      - libasm: libasm.md
-      - taskmaster: taskmaster.md
-    - Projets sécurité:
-      - modules: secu.md
-    - Projets réseaux:
-      - ft_ping: ft_ping.md
-  - KFS:
-    - intro: kfs_intro.md
-    - kf1: kfs1.md
-    - kf2: kfs2.md
+    - Plan: rncp/index.md
+    - RNCP: rncp/rncp.md
+    - Projets web:
+      - piscine: rncp/piscine_web.md
+      - bottle: rncp/bottle.md
+      - flask: rncp/flask.md
+      - django: rncp/django.md
+    - Projets mobile:
+      - piscine: rncp/piscine_mobile.md
+      - flutter: rncp/flutter.md
+    - KFS:
+      - ft_linux: rncp/ft_linux.md
+      - little_penguin: rncp/little_penguin.md
+      - kf1: rncp/kfs1.md
+      - kf2: rncp/kfs2.md
+    - Stages:
+      - pybot: rncp/pybot.md
+  - MEEF:
+      - programme: meef/index.md
+      - enseigner: meef/teach.md
+      - pedagogie: meef/pedago.md
+      - alter: meef/alter.md
   - NSI:
-    - college (cycle 4): college.md
-    - snt: snt.md
-    - nsi 1ere - cours: nsi_1.md
-    - nsi Term - cours: nsi_t.md
-    - bac - programme: bac_p.md
-    - bac - exams: bac_e.md
-    - capes - programme: capes_p.md
-    - capes - exams: capes_e.md
+    - programme: nsi/index.md
+    - college (cycle 4): nsi/college.md
+    - scratch: nsi/scratch.md
+    - html & css: nsi/htmlcss.md
+    - python: nsi/python.md
+    - snt: nsi/snt.md
+    - nsi 1ere - cours: nsi/nsi_1.md
+    - nsi Term - cours: nsi/nsi_t.md
+    - bac - programme: nsi/bac_p.md
+    - bac - exams: nsi/bac_e.md
+    - capes - programme: nsi/capes_p.md
+    - capes - exams: nsi/capes_e.md
+    - liste projets: nsi/projets.md
+  - YUPICOS: yupicos/index.md
+  
 
 theme: 
   icon:
@@ -49,6 +63,8 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     - navigation.sections
+    - navigation.expand
+    - navigation.tabs
     # - navigation.tabs
   #   - navigation.tabs.sticky
 
