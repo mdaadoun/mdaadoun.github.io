@@ -1,33 +1,37 @@
 site_name: RNCP
 nav:
   - RNCP:
-    - Plan: rncp/index.md
-    - RNCP: rncp/rncp.md
+    - Programme: index.md
     - Projets web:
-      - piscine: rncp/piscine_web.md
+      - python: rncp/python.md
       - bottle: rncp/bottle.md
       - flask: rncp/flask.md
       - django: rncp/django.md
+      - js/html/css: rncp/web.md
+      - camagru: rncp/camagru.md
+      - matcha: rncp/matcha.md
     - Projets mobile:
-      - piscine: rncp/piscine_mobile.md
       - flutter: rncp/flutter.md
-    - KFS:
-      - ft_linux: rncp/ft_linux.md
-      - little_penguin: rncp/little_penguin.md
-      - kf1: rncp/kfs1.md
-      - kf2: rncp/kfs2.md
+      - ft_hangouts: rncp/ft_hangouts.md
+      - swifty-companion: rncp/swifty.md
+    - Projets graphique:
+      - vala: rncp/vala.md
+      - opengl: rncp/opengl.md
+      - scop: rncp/scop.md
+      - humangl: rncp/humangl.md
+      # - bomberman: rncp/bomberman.md
     - Stages:
-      - pybot: rncp/pybot.md
+      - École 42: rncp/stage42.md
   - MEEF:
       - programme: meef/index.md
       - enseigner: meef/teach.md
       - pedagogie: meef/pedago.md
-      - alter: meef/alter.md
+      # - alter: meef/alter.md
   - NSI:
     - programme: nsi/index.md
     - college (cycle 4): nsi/college.md
     - scratch: nsi/scratch.md
-    - html & css: nsi/htmlcss.md
+    - html, css et js: nsi/web.md
     - python: nsi/python.md
     - snt: nsi/snt.md
     - nsi 1ere - cours: nsi/nsi_1.md
@@ -36,26 +40,27 @@ nav:
     - bac - exams: nsi/bac_e.md
     - capes - programme: nsi/capes_p.md
     - capes - exams: nsi/capes_e.md
-    - liste projets: nsi/projets.md
-  - YUPICOS: yupicos/index.md
-  
+    # - liste projets: nsi/projets.md
+  - YUPICOS: 
+    - projet: yupicos/index.md
+    - pygame: yupicos/pygame.md
 
 theme: 
   icon:
-    logo: material/robot-love-outline
+    logo: material/penguin
     favicon: images/favicon.png
   name: material 
   language: fr
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: purple
+      primary: deep purple
       toggle:
         icon: material/brightness-4
         name: Passer au mode sombre
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: purple
+      primary: deep purple
       toggle:
         icon: material/brightness-7
         name: Passer au mode clair
@@ -65,10 +70,17 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.tabs
-    # - navigation.tabs
-  #   - navigation.tabs.sticky
+    - navigation.tabs
+    - navigation.tabs.sticky
 
 markdown_extensions:
   - pymdownx.highlight:
       use_pygments: true
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
