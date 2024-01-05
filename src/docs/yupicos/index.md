@@ -1,3 +1,3 @@
 # YUPICOS
 
-Un programme jouet sous la forme d'un desktop fantasy et une bibliothèque pour apprendre à programmer.
+Une bibliothèque python qui permet de réaliser un desktop fantasy, des outils et des jeux pour apprendre à programmer.

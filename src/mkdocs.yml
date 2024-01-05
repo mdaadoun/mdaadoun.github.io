@@ -7,6 +7,7 @@ nav:
       - bottle: rncp/bottle.md
       - flask: rncp/flask.md
       - django: rncp/django.md
+      - fastapi: rncp/fastapi.md
       - js/html/css: rncp/web.md
       - camagru: rncp/camagru.md
       - matcha: rncp/matcha.md
@@ -20,6 +21,9 @@ nav:
       - scop: rncp/scop.md
       - humangl: rncp/humangl.md
       # - bomberman: rncp/bomberman.md
+    - Projets jeux:
+      - unity: rncp/unity.md
+      - godot: rncp/godot.md
     - Stages:
       - École 42: rncp/stage42.md
   - MEEF:
@@ -29,21 +33,26 @@ nav:
       # - alter: meef/alter.md
   - NSI:
     - programme: nsi/index.md
-    - college (cycle 4): nsi/college.md
-    - scratch: nsi/scratch.md
-    - html, css et js: nsi/web.md
-    - python: nsi/python.md
-    - snt: nsi/snt.md
-    - nsi 1ere - cours: nsi/nsi_1.md
-    - nsi Term - cours: nsi/nsi_t.md
-    - bac - programme: nsi/bac_p.md
-    - bac - exams: nsi/bac_e.md
-    - capes - programme: nsi/capes_p.md
-    - capes - exams: nsi/capes_e.md
+      - scratch: nsi/scratch.md
+      - html, css et js: nsi/web.md
+      - python: nsi/python.md
+    - cours:
+      - college (cycle 4): nsi/college.md
+      - snt: nsi/snt.md
+      - nsi 1ere - cours: nsi/nsi_1.md
+      - nsi Term - cours: nsi/nsi_t.md
+    - bac:
+      - bac - programme: nsi/bac_p.md
+      - bac - exams: nsi/bac_e.md
+    - capes/cafep:
+      - capes - programme: nsi/capes_p.md
+      - capes - exams: nsi/capes_e.md
     # - liste projets: nsi/projets.md
   - YUPICOS: 
     - projet: yupicos/index.md
     - pygame: yupicos/pygame.md
+  # - PAX FABRICA LMS:
+  #   - projet: pxfa/index.md
 
 theme: 
   icon:

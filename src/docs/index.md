@@ -2,17 +2,20 @@
 
 https://www.francecompetences.fr/recherche/rncp/36135/
 
-web et mobile :
-piscine web - 60 heures, 1 mois - janvier
-camagru - 50 heures, 3 semaines - février
-piscine mobile - 60 heures, 1 mois - mars 
-ft_hangouts - 50 heures, 3 semaines - avril
-swiftycompanion - 50 heures, 3 semaines - mai
-matcha - 100 heures, team, 2 mois - juin-juillet-aout
+## web, mobile et graphique :
 
-team graphiques :
-scop - janvier
-humangl - fevrier-mars-avril
-bomberman - mai-juin-juillet-aout
+### python
+* piscine web - 60 heures - janvier
+* camagru - 50 heures - février
+* matcha - 100 heures, team - juin-juillet-aout
 
-jusqu'a stage : yupicos startup project ?
+### flutter
+* piscine mobile - 60 heures, 1 mois - mars 
+* ft_hangouts - 50 heures, 3 semaines - avril
+* swiftycompanion - 50 heures, 3 semaines - mai
+
+### opengl, c/c++/vala
+* scop - janvier-fevrier - 100h
+* 42run - mars-avril-mai - 100h
+* humangl - juin-juillet-aout - 200h - team
+
