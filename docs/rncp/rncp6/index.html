@@ -1,0 +1,1333 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../roadmap/">
+      
+      
+        <link rel="next" href="../../nsi/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
+    
+    
+      
+        <title>rncp 6 - Apprendre la science informatique</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fad675c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="Apprendre la science informatique" class="md-header__button md-logo" aria-label="Apprendre la science informatique" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 16c0 1.72-.63 3.3-1.66 4.5.41.39.66.91.66 1.5H6c0-.59.25-1.11.66-1.5A6.902 6.902 0 0 1 5 16H3c0-1.25.57-2.36 1.46-3.09l.01-.02A6.004 6.004 0 0 0 7 8V7a5 5 0 0 1 5-5 5 5 0 0 1 5 5v1c0 2 1 3.81 2.53 4.89l.01.02c.89.73 1.46 1.84 1.46 3.09h-2m-3 0a4 4 0 0 0-4-4 4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4m-6-7 2 1.5L14 9l-2-1.5L10 9m0-4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m4 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apprendre la science informatique
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              rncp 6
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Passer au mode sombre"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passer au mode sombre" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Passer au mode clair"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Passer au mode clair" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  SCIENCE
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  RNCP
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../nsi/" class="md-tabs__link">
+          
+  
+  NSI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../projets/chip8/" class="md-tabs__link">
+          
+  
+  PROJETS
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apprendre la science informatique" class="md-nav__button md-logo" aria-label="Apprendre la science informatique" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 16c0 1.72-.63 3.3-1.66 4.5.41.39.66.91.66 1.5H6c0-.59.25-1.11.66-1.5A6.902 6.902 0 0 1 5 16H3c0-1.25.57-2.36 1.46-3.09l.01-.02A6.004 6.004 0 0 0 7 8V7a5 5 0 0 1 5-5 5 5 0 0 1 5 5v1c0 2 1 3.81 2.53 4.89l.01.02c.89.73 1.46 1.84 1.46 3.09h-2m-3 0a4 4 0 0 0-4-4 4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4m-6-7 2 1.5L14 9l-2-1.5L10 9m0-4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m4 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg>
+
+    </a>
+    Apprendre la science informatique
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    SCIENCE
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            SCIENCE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    6.Graphisme
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            6.Graphisme
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/6.GTI/notes1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notes1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/6.GTI/notes1/projet1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projet1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/6.GTI/notes2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notes2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/6.GTI/notes3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notes3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/6.GTI/resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ressources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    8.Mathématiques
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            8.Mathématiques
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/8.MSF/notes1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notes1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/8.MSF/resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ressources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    RNCP
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            RNCP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Programme
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Programme
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programme rncp 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    rncp 6
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    NSI
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            NSI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nsi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    programme
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    PROJETS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            PROJETS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    CHIP8
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            CHIP8
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projets/chip8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projets/chip8/roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roadmap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projets/chip8/opcodes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Opcodes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projets/chip8/devlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Devlog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>rncp 6</h1>
+
+<p>Concepteur développeur de solutions informatiques
+Active
+Europass
+?  Aide en ligne
+N° de fiche
+RNCP36135
+Nomenclature du niveau de qualification : Niveau 6
+Code(s) NSF :</p>
+<div class="highlight"><pre><span></span><code>326t : Programmation, mise en place de logiciels
+</code></pre></div>
+<p>Formacode(s) :</p>
+<div class="highlight"><pre><span></span><code>31088 : Programmation
+31057 : Génie logiciel
+</code></pre></div>
+<p>Date d’échéance de l’enregistrement : 26-01-2025
+certificateur(s)
+Résumé de la certification
+blocs de compétences
+secteur d'activité et type d'emploi
+voie d'accès
+liens avec d’autres certifications professionnelles…
+Base légale
+Pour plus d'informations
+certificateur(s)
+Nom légal   SIRET   Nom commercial  Site internet
+42  79119919300016  -   https://www.42.fr/
+Résumé de la certification
+Objectifs et contexte de la certification :</p>
+<p>La certification de concepteur développeur de solutions informatiques répond à un besoin en main-d'œuvre existant et à venir, et fournit toutes les compétences nécessaires pour évoluer soit dans le développement d'applications web et mobiles, soit dans le développement de logiciels applicatifs. 
+Activités visées :</p>
+<p>Les activités visées par la certification sont les suivantes :</p>
+<div class="highlight"><pre><span></span><code>Réalisation de l’analyse technique des besoins
+Développement d’application web &amp; mobile (option 1)
+Développement de logiciels applicatifs (option 2) 
+Réalisation des tests, écriture et corrections  
+Mise en production et réalisation de la maintenance des applications
+</code></pre></div>
+<p>Compétences attestées :</p>
+<p>C1.1 Réaliser une veille technologique continue sur différents domaines liés au numérique</p>
+<p>C1.2 Analyser le cahier des charges d’un commanditaire</p>
+<p>C1.3 Présenter un projet au commanditaire</p>
+<p>C1.4 Assurer la planification du projet    </p>
+<p>C2.1 Assurer le choix des technologies non imposées et la prise en main de l’ensemble des outils et des technologies associés au développement d’une application web/mobile</p>
+<p>C2.2 Utiliser les librairies et/ou les Frameworks correspondants permettant un développement d’une application web/mobile avec des structures et des fonctionnalités déjà existantes </p>
+<p>C2.3 Réaliser le code et les algorithmes pour répondre au besoin exprimé </p>
+<p>C3.1 Réaliser un projet selon le paradigme de programmation impératif </p>
+<p>C3.2 Appliquer le paradigme impératif à l'aide des éléments fondamentaux constitutifs de la programmation impérative </p>
+<p>C3.3 Réaliser un projet selon le paradigme de la programmation fonctionnelle </p>
+<p>C3.4 Modéliser un projet selon le paradigme de la programmation orientée objet</p>
+<p>C3.5 Concevoir un logiciel selon le paradigme de la programmation orientée objet </p>
+<p>C3.6 Utiliser des algorithmes </p>
+<p>C4.1 Préparer et réaliser les tests unitaires </p>
+<p>C4.2 Réaliser les tests de charge / tests de performance</p>
+<p>C4.3 Réaliser des corrections nécessaires en fonction des anomalies décrites </p>
+<p>C5.1 Réaliser la livraison du produit </p>
+<p>C5.2 Assurer le transfert d’information et de compétences sur le logiciel </p>
+<p>C5.3 Mettre en œuvre une maintenance évolutive des applications </p>
+<p>C5.4 Assurer la programmation des évolutions <br />
+Modalités d'évaluation :</p>
+<p>Mises en situation professionnelle fictives en équipe, mise en situation professionnelle réelle individuelle en mode projet, cas pratiques, réalisation de tests sur les projets de ses pairs.
+blocs de compétences
+RNCP36135BC01 - Réalisation de l’analyse technique des besoins</p>
+<p>Liste de compétences    Modalités d'évaluation</p>
+<p>C1.1 Réaliser une veille technologique continue sur différents domaines liés au numérique, en suivant la littérature en ligne ou en interagissant avec ses pairs (salons, conférences…) afin d’accroître ses connaissances, de toujours être dans la tendance, et d’être agile dans ses projets et force de proposition.</p>
+<p>C1.2 Analyser le cahier des charges d’un commanditaire en prenant en compte les objectifs, les contraintes (tarif, qualité attendue, délais, environnement technique) et les différentes étapes du cycle de vie du produit envisagé pour concevoir des solutions innovantes et originales, afin de répondre aux attentes et aux besoins du client.  </p>
+<p>C1.3 Présenter un projet au commanditaire en traduisant ses besoins dans un cahier des charges techniques et en écrivant les spécifications techniques générales et détaillées, en envisageant les problèmes éventuels et les évolutions afin d’avoir son accord pour lancer le projet </p>
+<p>C1.4 Assurer la planification du projet en ordonnant les étapes du développement dans un calendrier logique tout en respectant les contraintes, en répartissant les responsabilités et les tâches en fonction des compétences disponibles afin d’optimiser les délais, les coûts et l’efficacité collective.  </p>
+<p>Mise en situation professionnelle fictive en équipe :  Réalisation d’une veille technologique qui permettra de présenter, à l’occasion des projets concernés : </p>
+<p>• Des propositions innovantes dans le cahier des charges.</p>
+<p>• Des pratiques et choix techniques novateurs dans l’exécution des projets. </p>
+<p>Cas pratique : Le candidat analyse un sujet avec un énoncé sous la forme d’un cahier des charges fonctionnel afin de mettre en place des propositions de solutions adaptées. </p>
+<p>Mise en situation professionnelle fictive en équipe :  le candidat assure la réalisation d’un cahier des charges fonctionnel à l’écrit.</p>
+<p>Mise en situation professionnelle fictive : le candidat présente son cahier des charges fonctionnel lors d’une soutenance orale du projet libre devant 5 personnes différentes.</p>
+<p>Mise en situation professionnelle fictive en équipe :  le candidat travaillant en équipe autour d’un projet de développement d’une application web mobile/et ou d’un logiciel applicatif planifie l’élaboration du projet et répartit au sein de son équipe les tâches imparties à chacun.</p>
+<p>RNCP36135BC02 - Développement d’application web &amp; mobile (option 1)</p>
+<p>Liste de compétences    Modalités d'évaluation</p>
+<p>C2.1 Assurer le choix des technologies non imposées et la prise en main de l’ensemble des outils et des technologies associés au développement d’une application web/mobile, en prenant en compte les besoins et objectifs de l’application ainsi que de son environnement, afin d’être en adéquation avec les demandes du commanditaire.  </p>
+<p>C2.2 Utiliser les librairies et/ou les Frameworks correspondants permettant un développement d’une application web/mobile avec des structures et des fonctionnalités déjà existantes, en respectant les standards et les contraintes de programmation préétablis, afin de faciliter la structuration puis l’intégration et enfin l’installation des applications. </p>
+<p>C2.3 Réaliser le code et les algorithmes pour répondre au besoin exprimé en utilisant l’environnement de développement, le langage informatique, les Framework et librairies, préalablement choisis comme étant les plus adaptés à l’application et au résultat voulu, en s’assurant du respect des spécifications et des règles lors de l’écriture du code, en structurant et en modifiant les données si besoin afin de créer les actions propres à l’application web/mobile. </p>
+<p>Mises en situation professionnelle réelles en mode projet : le candidat en mode projet va choisir et prendre en main les outils adaptés au projet (ex : choix de Xcode et swift pour une application iPhone ou choix de Java pour une application Android, choix de GO et Nginx pour application web) en fonction de l’application ou de l’environnement dans laquelle doit évoluer l’application.</p>
+<p>Mises en situation professionnelle réelles en mode projet : le candidat installe des librairies et des Framework pour des applications web et/ou mobiles. Il s’approprie ensuite l’utilisation de ces librairies, Framework et des standards web/mobiles.  </p>
+<p>Mises en situation professionnelle réelles en mode projet : Le candidat assure la réalisation du code et des algorithmes en fonction de l’application (ex : application marchande, système de conversations instantanées, … ).<br />
+RNCP36135BC03 - Développement de logiciels applicatifs (option 2)</p>
+<p>Liste de compétences    Modalités d'évaluation</p>
+<p>C3.1 Réaliser un projet selon le paradigme de programmation impératif, en analysant une problématique et en la découpant en briques élémentaires successives afin de former le code d’un logiciel.</p>
+<p>C3.2 Appliquer le paradigme impératif à l'aide des éléments fondamentaux constitutifs de la programmation impérative (syntaxe du langage, variables, fonctions, boucles, branchements conditionnels, calculs et expressions, compilation, librairies, structures de données avancées) et des algorithmes standards associés afin d'obtenir un logiciel adapté aux besoins du projet.</p>
+<p>C3.3 Réaliser un projet selon le paradigme de la programmation fonctionnelle, en utilisant les outils spécifiques facilitant l'activité de programmation (interpréteurs, compilateurs, contrôleurs de types...) afin de construire un programme résolvant un problème donné. </p>
+<p>C3.4 Modéliser un projet selon le paradigme de la programmation orientée objet, en représentant les concepts à l’aide d’objets ayant des attributs et des fonctions afin d’obtenir un code qui puisse être davantage maintenable et réutilisable. </p>
+<p>C3.5  Concevoir un logiciel selon le paradigme de la programmation orientée objet à l’aide des éléments spécifiques à ce type de programmation (en comparaison de la programmation impérative) : classes, héritage, polymorphisme, surcharge, templates afin de respecter le besoin client. </p>
+<p>C3.6 Utiliser des algorithmes en prenant en compte les problématiques inhérentes à son projet et en créant une série d’instruction dans un langage de programmation afin de résoudre un problème. </p>
+<p>Mises en situation professionnelle réelles en mode projet : dans le cadre d’un développement de logiciels applicatifs, le candidat analyse sa problématique de programmation en la découpant en briques élémentaires à sa disposition dans le cadre du paradigme impératif. Mises en situation professionnelle réelles en mode projet : lors du projet de création de logiciel, le candidat répond aux besoins exprimés en utilisant un langage de programmation fonctionnelle adapté. Mises en situation professionnelle réelles en mode projet : le candidat réalise un projet selon le paradigme de la programmation orientée objet en utilisant les technologies appropriées (langages de programmation, outils de modélisation ….) Mises en situation professionnelle réelles en mode projet : Le candidat assure la réalisation du code et des algorithmes en fonction des besoins et objectifs du logiciel à réaliser.<br />
+RNCP36135BC04 - Réalisation des tests, écriture et corrections</p>
+<p>Liste de compétences    Modalités d'évaluation</p>
+<p>C4.1 Préparer et réaliser les tests unitaires en créant un jeu de tests en fonction de scénarios, en les initialisant, en assurant leur mise en œuvre, en vérifiant les résultats afin de pouvoir y apporter par la suite les corrections nécessaires, et enfin en les désactivant avant la mise en production. </p>
+<p>C4.2 Réaliser les tests de charge / tests de performance, en prenant des décisions en collaboration avec les équipes dédiées, en définissant des hypothèses de trafic, en choisissant et en installant les outils de tests appropriés, afin d’anticiper les évolutions et problèmes possibles de son application, et en vérifier la fiabilité. </p>
+<p>C4.3 Réaliser des corrections nécessaires en fonction des anomalies décrites en échangeant et en prenant les décisions avec les équipes impliquées dans le projet (développeurs, architecte SI, DevOps…) afin de mettre en œuvre les correctifs qui sont en lien avec son domaine de compétence.  </p>
+<p>Réaliser des tests sur les projets de ses pairs : Lorsqu’il est chargé de contrôler les réalisations de ses pairs, il doit créer des tests afin d’évaluer correctement le bon fonctionnement des projets. Il doit s’assurer que les tests sont valides, pertinents et reproductibles.</p>
+<p>Cas pratiques : Réalisation de tests unitaires sur des projets donnés : le candidat, lors de cas pratiques, met en œuvre des tests unitaires en utilisant par exemple un logiciel de gestion des versions lui permettant de garder une trace des tests réalisés. Les tests sont réalisés en veillant à toujours séparer l’environnement de test de l’environnement de développement.</p>
+<p>Réaliser des tests sur les projets de ses pairs : Lorsqu’il est chargé de contrôler les réalisations de ses pairs, il doit créer des tests afin d’évaluer correctement le bon fonctionnement des projets dans leur environnement. Il doit s’assurer que les tests sont valides, pertinents et reproductibles.</p>
+<p>Cas pratiques : le candidat va modifier l’environnement d’exécution du logiciel qu'il évalue, et simuler artificiellement une utilisation soutenue du logiciel par des clients ou utilisateurs, si nécessaire à l’aide de logiciels tiers spécialisés.</p>
+<p>Mise en situation professionnelle réelle et/ou fictive : le candidat doit corriger les problèmes soulevés par ses pairs utilisant un barème d’évaluation, lors d’une soutenance de son projet. La politique d’essai/erreurs et les tests réalisés par ses pairs le mettent en demeure d’apporter les corrections à son projet et de le présenter à nouveau.</p>
+<p>RNCP36135BC05 - Mise en production et réalisation de la maintenance des applications</p>
+<p>Liste de compétences    Modalités d'évaluation</p>
+<p>C5.1 – Réaliser la livraison du produit en remettant un package logiciel aux équipes dédiées à la mise en œuvre et au maintien du système d’information de l’entreprise, afin d’en permettre l’accessibilité aux utilisateurs finaux.   </p>
+<p>C5.2 – Assurer le transfert d’information et de compétences sur le logiciel, en réalisant la documentation spécifique adaptée, d’une part pour les utilisateurs finaux, d’autre part pour les équipes techniques qui en assurent la maintenance et l’évolution,  dans le respect des contraintes de sécurité.</p>
+<p>C5.3 – Mettre en œuvre une maintenance évolutive des applications en assurant les corrections à la suite des  problèmes soulevés (bugs) par les utilisateurs ou les équipes dédiées afin d’assurer une maintenance corrective et évolutive des applications.</p>
+<p>C5.4 – Assurer la programmation des évolutions en prenant en compte et en intégrant les évolutions des solutions techniques existantes et celles demandées par les utilisateurs afin d’avoir une application optimale.</p>
+<p>Mise en situation professionnelle réelle et/ou fictive : Réalisation du livrable d’une application/logiciel : le candidat créé un package auto-suffisant du produit et assure sa livraison : </p>
+<p>• le logiciel ou l’application est fourni avec l’environnement dont il est dépendant (C5.1)</p>
+<p>• le package doit contenir la documentation indispensable à la bonne mise en production et la bonne utilisation du logiciel (C5.2) </p>
+<p>Mise en situation professionnelle réelle et/ou fictive : réalisation et validation d’un projet A, impliquant des remontées utilisateur (lors d’une soutenance ou de la part du client lors d’un stage) et des mises à jour correctives. Réalisation par la suite d’un projet B qui constitue une évolution majeure du projet A.</p>
+<p>Description des modalités d'acquisition de la certification par capitalisation des blocs de compétences et/ou par correspondance :</p>
+<p>La certification s'obtient par validation des 3 blocs de compétences communs obligatoires, complétée de la validation d'un des 2 blocs de spécialisation .
+secteur d'activité et type d'emploi
+Secteurs d’activités :</p>
+<p>Le concepteur développeur de solutions informatiques peut travailler dans différents types de structures, principalement : en collectivité territoriale, en entreprise, en entreprise publique/établissement public, en société de conseil, en Entreprise de Services Numériques – ESN voire en studio de développement de jeux vidéo. En qualité de concepteur de jeux vidéo, il peut également exercer en agence de communication, en agence de promotion et de marketing direct, en agence de publicité, en organe de presse, en studio de création graphique, et en studio de films d'animation ou comme indépendant.</p>
+<p>Il peut enfin exercer dans différents secteurs d’activité, principalement, dans l’administration / les Services de l'État, dans l’armée, dans l’informatique et télécommunications, dans le développement logiciel, la maintenance d’applications existantes et la conception de nouveaux logiciels. l’édition multimédia voire dans la construction de matériel informatique.</p>
+<p>Type d'emplois accessibles :</p>
+<p>Le concepteur développeur de solutions informatiques est un métier relié à la fiche ROME M1805 ; il concerne le métier des « études et développement informatique ». Il est chargé de concevoir, de développer et de mettre au point « un projet d’application informatique, de la phase d’études à son intégration, pour un client ou une entreprise selon des besoins fonctionnels et un cahier des charges ». Il peut également être amené à conduire des projets de développement ou à coordonner une équipe.</p>
+<p>Selon l’APEC, le principal facteur de variabilité de l’activité de concepteur  développeur de solutions informatiques est un facteur technologique : « certains développeurs sont spécialisés sur une technologie très précise et pointue, d’autres sont développeurs multiplateformes ». L’environnement professionnel peut également exiger d’eux la maîtrise de compétences supplémentaires : à titre d’exemple, développer une application sur smartphone n’implique pas les mêmes besoins techniques que pour la conception d’un jeu vidéo en ligne. A ce titre, il peut exercer sous différentes fonctions.</p>
+<p>Appellations similaires :</p>
+<div class="highlight"><pre><span></span><code>Concepteur-développeur
+Développeur full-stack, back-end, IOS, C/C+…
+Développeur logiciel applications web et mobile
+Développeur informatique
+</code></pre></div>
+<p>Code(s) ROME :</p>
+<div class="highlight"><pre><span></span><code>M1805 - Études et développement informatique
+</code></pre></div>
+<p>Références juridiques des règlementations d’activité :</p>
+<p>Voies d’accès
+Le cas échant, prérequis à l’entrée en formation :</p>
+<p>Il n’y a pas de prérequis au niveau d’études pour accéder au dispositif de certification.  </p>
+<p>Le candidat devra avoir : </p>
+<div class="highlight"><pre><span></span><code>Plus de 18 ans
+</code></pre></div>
+<p>Passer un processus de sélection. Ce processus est composé de plusieurs étapes : </p>
+<div class="highlight"><pre><span></span><code>des jeux en ligne, 
+le check-in, une réunion d’information
+la Piscine (test de positionnement d’un mois qui se déroule dans les locaux de l&#39;organisme).
+</code></pre></div>
+<p>Le cas échant, prérequis à la validation de la certification :</p>
+<p>Pré-requis disctincts pour les blocs de compétences :
+Non</p>
+<p>Validité des composantes acquises :
+Voie d’accès à la certification     Oui     Non     Composition des jurys
+Après un parcours de formation sous statut d’élève ou d’étudiant    X       </p>
+<p>1 membre interne de l'équipe pédagogique</p>
+<p>1 membre interne de la direction</p>
+<p>2 membres externes exerçant en proximité du métier (Directeur technique, Directeur Général, Chef de projet informatique, ...), dont un est désigné président du jury.
+En contrat d’apprentissage  X       </p>
+<p>1 membre interne de l'équipe pédagogique</p>
+<p>1 membre interne de la direction</p>
+<p>2 membres externes exerçant en proximité du métier (Directeur technique, Directeur Général, Chef de projet informatique, ...), dont un est désigné président du jury.
+Après un parcours de formation continue     X       </p>
+<p>1 membre interne de l'équipe pédagogique</p>
+<p>1 membre interne de la direction</p>
+<p>2 membres externes exerçant en proximité du métier (Directeur technique, Directeur Général, Chef de projet informatique, ...), dont un est désigné président du jury.
+En contrat de professionnalisation  X       </p>
+<p>1 membre interne de l'équipe pédagogique</p>
+<p>1 membre interne de la direction</p>
+<p>2 membres externes exerçant en proximité du métier (Directeur technique, Directeur Général, Chef de projet informatique, ...), dont un est désigné président du jury.
+Par candidature individuelle        X   -
+Par expérience  X       </p>
+<p>1 membre interne de l'équipe pédagogique</p>
+<p>1 membre interne de la direction</p>
+<p>2 membres externes exerçant en proximité du métier (Directeur technique, Directeur Général, Chef de projet informatique, ...), dont un est désigné président du jury, comprenant un salarié et un employeur.
+    Oui     Non
+Inscrite au cadre de la Nouvelle Calédonie      X
+Inscrite au cadre de la Polynésie française         X
+Liens avec d’autres certifications professionnelles, certifications ou habilitations
+Aucune correspondance
+Base légale
+Date de décision    26-01-2022
+Durée de l'enregistrement en années     3
+Date d'échéance de l'enregistrement     26-01-2025
+Promotions (année d'obtention) pouvant bénéficier du niveau de qualification octroyé    2020|2019|2021
+Pour plus d'informations
+Statistiques :
+Année d'obtention de la certification   Nombre de certifiés     Nombre de certifiés à la suite d’un parcours vae    Taux d'insertion global à 6 mois (en %)     Taux d'insertion dans le métier visé à 6 mois (en %)    Taux d'insertion dans le métier visé à 2 ans (en %)
+2020    18  0   92  72  -
+2019    34  0   100     87  79</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.sections", "navigation.expand", "navigation.tabs", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

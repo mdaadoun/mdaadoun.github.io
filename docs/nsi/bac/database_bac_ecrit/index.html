@@ -1,0 +1,1447 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
+    
+    
+      
+        <title>2021 - Apprendre la science informatique</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.fad675c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2021" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../../.." title="Apprendre la science informatique" class="md-header__button md-logo" aria-label="Apprendre la science informatique" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 16c0 1.72-.63 3.3-1.66 4.5.41.39.66.91.66 1.5H6c0-.59.25-1.11.66-1.5A6.902 6.902 0 0 1 5 16H3c0-1.25.57-2.36 1.46-3.09l.01-.02A6.004 6.004 0 0 0 7 8V7a5 5 0 0 1 5-5 5 5 0 0 1 5 5v1c0 2 1 3.81 2.53 4.89l.01.02c.89.73 1.46 1.84 1.46 3.09h-2m-3 0a4 4 0 0 0-4-4 4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4m-6-7 2 1.5L14 9l-2-1.5L10 9m0-4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m4 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apprendre la science informatique
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2021
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Passer au mode sombre"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passer au mode sombre" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Passer au mode clair"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Passer au mode clair" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  SCIENCE
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../rncp/" class="md-tabs__link">
+          
+  
+  RNCP
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  NSI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../projets/chip8/" class="md-tabs__link">
+          
+  
+  PROJETS
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Apprendre la science informatique" class="md-nav__button md-logo" aria-label="Apprendre la science informatique" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 16c0 1.72-.63 3.3-1.66 4.5.41.39.66.91.66 1.5H6c0-.59.25-1.11.66-1.5A6.902 6.902 0 0 1 5 16H3c0-1.25.57-2.36 1.46-3.09l.01-.02A6.004 6.004 0 0 0 7 8V7a5 5 0 0 1 5-5 5 5 0 0 1 5 5v1c0 2 1 3.81 2.53 4.89l.01.02c.89.73 1.46 1.84 1.46 3.09h-2m-3 0a4 4 0 0 0-4-4 4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4m-6-7 2 1.5L14 9l-2-1.5L10 9m0-4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m4 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg>
+
+    </a>
+    Apprendre la science informatique
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    SCIENCE
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            SCIENCE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    6.Graphisme
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            6.Graphisme
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/6.GTI/notes1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notes1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/6.GTI/notes1/projet1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projet1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/6.GTI/notes2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notes2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/6.GTI/notes3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notes3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/6.GTI/resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ressources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    8.Mathématiques
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            8.Mathématiques
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/8.MSF/notes1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notes1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/8.MSF/resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ressources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    RNCP
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            RNCP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Programme
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Programme
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rncp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programme rncp 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rncp/roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rncp/rncp6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    rncp 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    NSI
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            NSI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    programme
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    PROJETS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            PROJETS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    CHIP8
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            CHIP8
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../projets/chip8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../projets/chip8/roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roadmap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../projets/chip8/opcodes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Opcodes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../projets/chip8/devlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Devlog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21-nsij1an1-amerique-du-nord-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      21-NSIJ1AN1, Amérique du nord, 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-nsij1g11-etranger-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      21-NSIJ1G11, Etranger, 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-nsij1me1-metropole-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      21-NSIJ1ME1, Métropole, 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-nsij1me2-metropole-candidats-libres-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      21-NSIJ1ME2, Métropole candidats libres, 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-nsij1me3-metropole-session-de-septembre-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      21-NSIJ1ME3, Métropole session de septembre, 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-nsij2g11-etranger-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      21-NSIJ2G11, Etranger, 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-nsij2me1-metropole-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      21-NSIJ2ME1, Métropole, 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-nsij2me2-metropole-candidats-libres-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      21-NSIJ2ME2, Métropole candidats libres, 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-nsij2me3-metropole-session-de-septembre-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      21-NSIJ2ME3, Métropole session de septembre, 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-nsij2po1-polynesie-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      21-NSIJ2PO1, Polynésie, 2
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="2021">2021</h1>
+<h2 id="21-nsij1an1-amerique-du-nord-1">21-NSIJ1AN1, Amérique du nord, 1</h2>
+<p>1, bases de données relationnelles et langage SQL
+2, routage, processsus et systèmes sur puces
+3, tableaux et programmation de base en Python
+4, arbres binaires et algorithmes associés
+5, notion de pile, de file et programmation de base en Python</p>
+<h2 id="21-nsij1g11-etranger-1">21-NSIJ1G11, Etranger, 1</h2>
+<ul>
+<li>1: <em>programmation objet (code de César)</em>
+2, structures de données (dictionnaires)
+3, arbres binaires de recherche
+4, réseau
+5, structure de données (piles)</li>
+</ul>
+<h2 id="21-nsij1me1-metropole-1">21-NSIJ1ME1, Métropole, 1</h2>
+<p>1, arbres binaires de recherche
+2, gestion des processus, opérateurs booléens
+3, base de données et langage SQL
+4, algorithme de tri fusion et méthode diviser pour régner
+5, réseaux et protocoles de routage</p>
+<h2 id="21-nsij1me2-metropole-candidats-libres-1">21-NSIJ1ME2, Métropole candidats libres, 1</h2>
+<p>1, bases de données
+2, notions de piles et programmation orientée objet
+3, gestion des processus et protocoles de routage
+4, algorithme et programmation en Python
+5, manipulation de tableaux, récursivité, méthode "diviser pour régner"</p>
+<h2 id="21-nsij1me3-metropole-session-de-septembre-1">21-NSIJ1ME3, Métropole session de septembre, 1</h2>
+<p>1, protocoles de communication, réseau, protocoles de routage
+2, algorithmique (recherche dichotomique), langages et programmation (récursivité)
+3, bases de données et langage SQL
+4, Structure de données (programmation objet), langages et programmation
+5, structures de données (arbre, arbre binaire, pile)</p>
+<h2 id="21-nsij2g11-etranger-2">21-NSIJ2G11, Etranger, 2</h2>
+<p>1, structures de données : piles
+2, programmation python, tuples et liste
+3, Conversion décimal/binaire, table de vérité, codages des caractères
+4, Base de données
+5, programmation Python : commande d'un bandeau de diodes à l'aide d'un raspberry</p>
+<h2 id="21-nsij2me1-metropole-2">21-NSIJ2ME1, Métropole, 2</h2>
+<p>1, arbres et programmation orientée objet
+2, base de données relationnelles
+3, réseaux et protocoles de routage
+4, gestion des processus et des ressources
+5, structure de données linéaires</p>
+<h2 id="21-nsij2me2-metropole-candidats-libres-2">21-NSIJ2ME2, Métropole candidats libres, 2</h2>
+<p>1, bases de données relationnelles et langage SQL
+2, gestion des processus et des ressources par un système d'exploitation
+3, arbres binaires de recherche et programmation orientée objet
+4, programmation et récursivité
+5, programmation</p>
+<h2 id="21-nsij2me3-metropole-session-de-septembre-2">21-NSIJ2ME3, Métropole session de septembre, 2</h2>
+<p>1, réseau, protocoles de communication et de routages
+2, structure de données, langages et programmation
+3, base de données
+4, programmation orientée objet, langages et programmation
+5, traitement de données en table (CSV), langages et programmation"</p>
+<h2 id="21-nsij2po1-polynesie-2">21-NSIJ2PO1, Polynésie, 2</h2>
+<p>1, algorithmique et programmation (algorithmes de tri)
+2, données en table, bases de données
+3, arbres binaires de recherche et programmation orientée objet
+4, routage, architecture matérielle
+5, données en table, bases de données</p>
+<h1 id="2022">2022</h1>
+<h2 id="22-nsij1an1-amerique-du-nord-1">22-NSIJ1AN1, Amérique du nord, 1</h2>
+<p>1, bases de données relationnelles et langage SQL
+2, réseaux et protocoles de routage
+3, abres binaires de recherche et algorithmes associés
+4, chaînes de caractères, tableau et programmation de base en Python
+5, files, tableaux et algorithmes associés</p>
+<h2 id="22-nsij1as1-amerique-du-sud-1">22-NSIJ1AS1, Amérique du sud, 1</h2>
+<p>1, bases de données
+2, programmation et algorithmes de tri
+3, arbres binaires
+4, gestion des processus et des ressources par un système d'exploitation
+5, réseaux et protocoles de routage</p>
+<h2 id="22-nsij1g11-etranger-1">22-NSIJ1G11, Etranger, 1</h2>
+<p>1, structures de données (listes, p-uplets et dictionnaires)
+2, structures de données (files et la programmation objet en langage python)
+3, structures de données (dictionnaires)
+4, les bases de données
+5, architecture matérielle des ordinateurs, les réseaux et sur les protocoles de routage</p>
+<h2 id="22-nsij1ja1-asie-pacifique-1">22-NSIJ1JA1, Asie-Pacifique, 1</h2>
+<p>1, algorithmique, chaînes de caractères, complexité
+2, base de données
+3, systèmes d'exploitation
+4, programmation objet en langage Python
+5, programmation Python</p>
+<h2 id="22-nsij1lr1-mayotte-et-reseau-aefe-1">22-NSIJ1LR1, Mayotte et réseau AEFE, 1</h2>
+<p>1, structures de données (listes, piles et files)
+2, structures de données (programmation objet)
+3, bases de données relationnelles et langage SQL
+4, algorithmique (arbres binaires en profondeurs préfixe et infixe)
+5, réseau, protocoles de routage, langage et programmation</p>
+<h2 id="22-nsij1me1-metropole-1">22-NSIJ1ME1, Métropole, 1</h2>
+<p>1, structures de données
+2, bases de données
+3, représentations binaires et protocoles de routage
+4, parcours des arbres binaires, diviser pour régner, récursivité
+5, programmation orientée objet</p>
+<h2 id="22-nsij1me3-metropole-session-de-septembre-1">22-NSIJ1ME3, Métropole session de septembre, 1</h2>
+<p>1, algorithmique, arbres binaires de recherche et leurs parcours
+2, programmation orientée objet, itérations et récursivité
+3, bases de données relationnelles et langage SQL
+4, architecture matérielle, gestion de processus et réseaux
+5, notion de file et programmation en Python</p>
+<h2 id="22-nsij1nc1-nouvelle-caledonie-1">22-NSIJ1NC1, Nouvelle-Calédonie, 1</h2>
+<p>1, Schéma relationnel de bases de données et requêtes SQL
+2, Architecture des ordinateurs et protocoles réseau
+3, Algorithme et programmation en Python, fichier csv
+4, Algorithme et programmation en Python, arbre binaire
+5, Algorithme et programmation en Python et programmation orientée objet</p>
+<h2 id="22-nsij1po1-polynesie-1">22-NSIJ1PO1, Polynésie, 1</h2>
+<p>1, programmation et récursivité
+2, architecture matérielle, ordonnancement et expressions booléennes
+3, base de données, modèle relationnel, langage SQL
+4, structures de données, piles
+5, algorithmique, algorithme sur les abres binaires</p>
+<h2 id="22-nsij2an1-amerique-du-nord-2">22-NSIJ2AN1, Amérique du nord, 2</h2>
+<p>1, listes, arbres binaires de recherche et programmation orientée objet
+2, systèmes d'exploitation, gestion des processus par un système d'exploitation
+3, bases de données relationnelles et le langage SQL
+4, arbres binaires et algorithmes associés
+5, tableaux à deux dimensions et la programmation Python en général</p>
+<h2 id="22-nsij2as1-amerique-du-sud-2">22-NSIJ2AS1, Amérique du sud, 2</h2>
+<p>1, programmation, algorithmique et complexité
+2, réseaux et routage
+3, base de données
+4, programmation en Python, récursivité et méthode diviser pour régner
+5, arbres binaires, programmation orientée objet et récursivité</p>
+<h2 id="22-nsij2g11-etranger-2">22-NSIJ2G11, Etranger, 2</h2>
+<p>1, langages et programmation (récursivité)
+2, structure de données (dictionnaires)
+3, base de données
+4, structures de données, programmation objet
+5, architectures matérielles, systèmes d’exploitation et réseaux (protocoles de routage)</p>
+<h2 id="22-nsij2ja1-asie-pacifique-2">22-NSIJ2JA1, Asie-Pacifique, 2</h2>
+<p>1, systèmes d'exploitation Linux
+2, arbres binaires de recherche
+3, structures de données, programmation
+4, bases de données et langage SQL
+5, Exécution de programmes, recherche et corrections de bugs</p>
+<h2 id="22-nsij2lr1-mayotte-et-reseau-aefe-2">22-NSIJ2LR1, Mayotte et réseau AEFE, 2</h2>
+<p>1, structures de données (pile)
+2, bases de données
+3, représentation binaire d'un entier relatif, systèmes d'exploitation
+4, arbres binaires de recherche
+5, algorithmes et programmation Python</p>
+<h2 id="22-nsij2me1-metropole-2">22-NSIJ2ME1, Métropole, 2</h2>
+<p>1, arbres binaires de recherche, la programmation orientée objet et la récursivité
+2, structures de données
+3, réseaux et protocoles de routage
+4, base de données relationnelles et langage SQL
+5, programmation objet et méthode diviser pour régner</p>
+<h2 id="22-nsij2nc1-nouvelle-caledonie-2">22-NSIJ2NC1, Nouvelle-Calédonie, 2</h2>
+<p>1, Algorithme et programmation en Python, programmation orientée objet
+2, Algorithme et programmation en Python, arbre binaire
+3, Schéma relationnel de bases de données et requêtes SQL
+4, Architecture des ordinateurs et protocoles réseau
+5, Architecture réseau et protocoles de routage</p>
+<h1 id="2023">2023</h1>
+<h2 id="23-nsij1g11-etranger1">23-NSIJ1G11, Etranger,1</h2>
+<p>1, Bases de données relationnelles et le langage SQL
+2, Réseaux et protocoles de routage
+3, Structures de données files</p>
+<h2 id="23-nsij1li1-liban1">23-NSIJ1LI1, Liban,1</h2>
+<p>1, Algorithmique et programmation
+2, Bases de données, représentation des données et réseaux
+3, Piles, arbres et algorithmique</p>
+<h2 id="23-nsij1lr1-reunion1">23-NSIJ1LR1, Réunion,1</h2>
+<p>1, Réseaux et protocoles de routage
+2, Programmation orientée objet et dictionnaires
+3, Bases de données relationnelles et langage SQL</p>
+<h2 id="23-nsij1me1-metropole1">23-NSIJ1ME1, Métropole,1</h2>
+<p>1, Base de données relationnelles et le langage SQL
+2, Réseaux
+3, Programmation orientée objet en Python et algorithmique</p>
+<h2 id="23-nsij1po1-polynesie1">23-NSIJ1PO1, Polynésie,1</h2>
+<p>1, Bases de données relationnelles et le langage SQL
+2, * Gestions des processus et programmation orientée objet*
+3, Algorithmique, programmation orientée objet et méthode diviser pour régner</p>
+<h2 id="23-nsij2g11-etranger-2">23-NSIJ2G11, Etranger, 2</h2>
+<p>1, Adressage IP et protocoles de routage
+2, Bases de données relationnelles et langage SQL
+3, programmation en Python, manipulation des chaines de caractères, arbres binaires de recherche et parcours de liste</p>
+<h2 id="23-nsij2li1-liban-2">23-NSIJ2LI1, Liban, 2</h2>
+<p>1, Bases de données
+2, Réseaux, programmation Python et algorithmique
+3, Abres et algorithmique</p>
+<h2 id="23-nsij2lr1-reunion-2">23-NSIJ2LR1, Réunion, 2</h2>
+<p>1, Abres binaires de recherche, programmation orientée objet et récursivité
+2, Réseaux et procoles de routage
+3, Bases de données relationnelles et langage SQL</p>
+<h2 id="23-nsij2me1-metropole-2">23-NSIJ2ME1, Métropole, 2</h2>
+<p>1, Protocoles Réseaux
+2, Bases de données et langage SQL
+3, Arbres binaires, files et programmation orientée objet</p>
+<h2 id="23-nsij2po1-polynesie-2">23-NSIJ2PO1, Polynésie, 2</h2>
+<p>1, Arbres binaires de recherche, programmation orientée objet et récursivité
+2, Bases de données, modèle relationnel et langage SQL
+3, Architecture matérielle, processus et ordonnancement</p>
+<h2 id="23-nsizero-a-sujet-zero-a-1">23-NSIZERO-A, Sujet Zéro-A, 1</h2>
+<p>1, bases de données et types construits de données
+2, architecture matérielle, réseaux et systèmes d'exploitation
+3, arbres binaires de recherche et programmation objet</p>
+<h2 id="23-nsizero-b-sujet-zero-b-2">23-NSIZERO-B, Sujet Zéro-B, 2</h2>
+<p>1, ligne de commande sous Linux, traitement de données en tables et bases de données
+2, analyse et écriture de programmes récursifs
+3, arbres binaires de recherche et notion d'objet</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.sections", "navigation.expand", "navigation.tabs", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
