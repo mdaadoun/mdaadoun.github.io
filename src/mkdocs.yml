@@ -1,6 +1,6 @@
 site_name: Apprendre la science informatique
 nav:
-  - SCIENCE: 
+  - INFORMATIQUE: 
     - index: index.md
     # - Algorithmes:
     # - 5.Langages:
@@ -10,14 +10,14 @@ nav:
     - 6.Graphisme:
       # - Introduction: cs/6/index.md
       # - Chapitre 1: cs/6/chap1.md
-      - Notes1: cs/6.GTI/notes1/index.md
-      - Projet1: cs/6.GTI/notes1/projet1.md
-      - Notes2: cs/6.GTI/notes2/index.md
-      - Notes3: cs/6.GTI/notes3/index.md
-      - Ressources: cs/6.GTI/resources.md
+      - Notes1: graphics/notes1/index.md
+      - Projet1: graphics/notes1/projet1.md
+      - Notes2: graphics/notes2/index.md
+      - Notes3: graphics/notes3/index.md
+      - Ressources: graphics/resources.md
     - 8.Mathématiques:
-      - Notes1: cs/8.MSF/notes1/index.md
-      - Ressources: cs/8.MSF/resources.md
+      - Notes1: maths/notes1/index.md
+      - Ressources: maths/resources.md
   - RNCP:
     - Programme: 
       - Programme rncp 7: rncp/index.md
@@ -26,8 +26,8 @@ nav:
     # - Scop: rncp/scop/index.md
     # - Stages:
       # - École 42: rncp/stage/stage42.md
-  - NSI:
-    - programme: nsi/index.md
+  # - NSI:
+  #   - programme: nsi/index.md
   #     - scratch: nsi/scratch.md
   #     - html, css et js: nsi/web.md
   #     - python: nsi/python.md
@@ -43,12 +43,6 @@ nav:
     #   - capes - programme: nsi/capes_p.md
     #   - capes - exams: nsi/capes_e.md
     # - liste projets: nsi/projets.md
-  - PROJETS: 
-    - CHIP8:
-      - Introduction: projets/chip8/index.md
-      - Roadmap: projets/chip8/roadmap.md
-      - Opcodes: projets/chip8/opcodes.md
-      - Devlog: projets/chip8/devlog.md
 
 theme: 
   icon:
